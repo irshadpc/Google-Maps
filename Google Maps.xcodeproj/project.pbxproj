@@ -13,8 +13,9 @@
 		0D9093071619B32600D1EDD6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9093041619B32600D1EDD6 /* Default-568h@2x.png */; };
 		0D9093081619B32600D1EDD6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9093051619B32600D1EDD6 /* Default.png */; };
 		0D9093091619B32600D1EDD6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9093061619B32600D1EDD6 /* Default@2x.png */; };
-		0D9093111619B36000D1EDD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9093101619B36000D1EDD6 /* AppDelegate.m */; };
+		0D9093111619B36000D1EDD6 /* TZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9093101619B36000D1EDD6 /* TZAppDelegate.m */; };
 		0D9093131619B36500D1EDD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9093121619B36500D1EDD6 /* main.m */; };
+		0D90931A1619B3FE00D1EDD6 /* TZMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9093191619B3FE00D1EDD6 /* TZMapController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,11 @@
 		0D9093041619B32600D1EDD6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0D9093051619B32600D1EDD6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0D9093061619B32600D1EDD6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		0D90930F1619B36000D1EDD6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Source/AppDelegate.h; sourceTree = SOURCE_ROOT; };
-		0D9093101619B36000D1EDD6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Source/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		0D90930F1619B36000D1EDD6 /* TZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TZAppDelegate.h; path = Source/TZAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		0D9093101619B36000D1EDD6 /* TZAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TZAppDelegate.m; path = Source/TZAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		0D9093121619B36500D1EDD6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = SOURCE_ROOT; };
+		0D9093181619B3FE00D1EDD6 /* TZMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TZMapController.h; path = Source/TZMapController.h; sourceTree = SOURCE_ROOT; };
+		0D9093191619B3FE00D1EDD6 /* TZMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TZMapController.m; path = Source/TZMapController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +81,10 @@
 		0D9092EC1619B2AB00D1EDD6 /* Google Maps */ = {
 			isa = PBXGroup;
 			children = (
-				0D90930F1619B36000D1EDD6 /* AppDelegate.h */,
-				0D9093101619B36000D1EDD6 /* AppDelegate.m */,
+				0D90930F1619B36000D1EDD6 /* TZAppDelegate.h */,
+				0D9093101619B36000D1EDD6 /* TZAppDelegate.m */,
+				0D9093181619B3FE00D1EDD6 /* TZMapController.h */,
+				0D9093191619B3FE00D1EDD6 /* TZMapController.m */,
 			);
 			path = "Google Maps";
 			sourceTree = "<group>";
@@ -169,8 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D9093111619B36000D1EDD6 /* AppDelegate.m in Sources */,
+				0D9093111619B36000D1EDD6 /* TZAppDelegate.m in Sources */,
 				0D9093131619B36500D1EDD6 /* main.m in Sources */,
+				0D90931A1619B3FE00D1EDD6 /* TZMapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,10 +239,12 @@
 		0D9093011619B2AB00D1EDD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -244,10 +252,12 @@
 		0D9093021619B2AB00D1EDD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
