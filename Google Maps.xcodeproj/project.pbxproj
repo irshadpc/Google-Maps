@@ -16,6 +16,7 @@
 		0D9093111619B36000D1EDD6 /* TZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9093101619B36000D1EDD6 /* TZAppDelegate.m */; };
 		0D9093131619B36500D1EDD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9093121619B36500D1EDD6 /* main.m */; };
 		0D90931A1619B3FE00D1EDD6 /* TZMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9093191619B3FE00D1EDD6 /* TZMapController.m */; };
+		0D9093241619B88700D1EDD6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9093231619B88700D1EDD6 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		0D9093121619B36500D1EDD6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = SOURCE_ROOT; };
 		0D9093181619B3FE00D1EDD6 /* TZMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TZMapController.h; path = Source/TZMapController.h; sourceTree = SOURCE_ROOT; };
 		0D9093191619B3FE00D1EDD6 /* TZMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TZMapController.m; path = Source/TZMapController.m; sourceTree = SOURCE_ROOT; };
+		0D9093231619B88700D1EDD6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		0D9093031619B32600D1EDD6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0D9093231619B88700D1EDD6 /* Icon@2x.png */,
 				0D9093041619B32600D1EDD6 /* Default-568h@2x.png */,
 				0D9093061619B32600D1EDD6 /* Default@2x.png */,
 				0D9093051619B32600D1EDD6 /* Default.png */,
@@ -164,6 +167,7 @@
 				0D9093071619B32600D1EDD6 /* Default-568h@2x.png in Resources */,
 				0D9093081619B32600D1EDD6 /* Default.png in Resources */,
 				0D9093091619B32600D1EDD6 /* Default@2x.png in Resources */,
+				0D9093241619B88700D1EDD6 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
